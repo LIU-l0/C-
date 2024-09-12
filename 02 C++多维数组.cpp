@@ -9,21 +9,29 @@ int main()
 		{5,6,7,8},
 		{9,10,11,12}
 	};
-	cout << "ĞŸĞ ÑÑ‚Ñ€Ğ¾Ñ‡Ğ½Ğ¾:" << "\n";
+	cout << "§±§° §ã§ä§â§à§é§ß§à:" << "\n";
 	for (int i = 0; i < 3; i++)
 	{
 		for (int j = 0; j < 4; j++)
 		{
-			cout << matrix[i][j] << "_";
+			cout << matrix[i][j];
+			{
+				if (j < 3) cout << "_";
+				else cout << "\n";
+			}
 		}
 		cout << endl;
 	}
-	cout << "ĞŸĞ¾ ÑÑ‚Ğ¾Ğ»Ğ±Ñ†Ğ°Ğ¼: " << "\n";
+	cout << "§±§à §ã§ä§à§İ§Ò§è§Ñ§Ş: " << "\n";
 	for (int i = 0; i < 4; i++)
 	{
 		for (int j = 0; j < 3; j++)
 		{
-			cout << matrix[j][i] << "_";
+			cout << matrix[j][i];
+			{
+				if (j < 2) cout << "_";
+				else cout << "\n";
+			}
 		}
 		cout << endl;
 	}
